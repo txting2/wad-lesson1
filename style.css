@@ -1,0 +1,58 @@
+h1{
+    color:yellowgreen;
+}
+
+h2 {
+    background-color: yellow;
+}
+/* #(id) to call out the element with that id and only changes that */
+h2#main-title {
+    background-color: snow;
+}
+
+div#outer {
+    border:3px black solid;
+}
+
+/* only for list with class 'special' */
+li.special{
+    color:red;
+    border: 1px red solid;
+}
+
+/* This is for all elements with class "special" */
+.special {
+    background-color: navajowhite;
+}
+/* if there is more than one CSS rule, the rule will cascade down
+so when there is two color rule, the one with special class will change to red
+but because there is no font-size rule in special, so it will take
+the rule of the normal class. */
+
+li {
+    color:blue;
+    font-size:20px;
+}
+
+span.highlight {
+    background-color: aqua;
+}
+
+span {
+    font-style: italic;
+}
+
+/* select the <li> with the classes 'boxoffice' and 'underline'*/
+li.boxoffice.underline {
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*for all elements in a <table> that has the class 'genre */
+/* the space after table is required, parent-child selector
+looking at all tables, and those with the class 'genre'*/
+
+/*parent-child selection method is useful for web scrapping*/
+table .genre {
+    font-weight: bold;
+}

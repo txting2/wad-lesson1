@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Shortcut is link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Movie Reviews</h1>
+    <!-- id must be unique, can only be used once in the document-->
+    <h2 id="main-title">Upcoming Movie Release</h2>
+    <h3>Dr. Strange II</h3>
+    <p>The quick brown fox jumps over the lazy dog.</p>
+    <!-- If url doesn't start with https:// the machine will assume you are referring to the same directory in html-->
+    <a href="page2.html">Page Two <img src="Sus.jpg" style="width:300px;" /></a>
+
+    <!--A straight horizontal line across the page -->
+    <h2>Some other movies</h2>
+    <hr />
+    <h3>Star Wars Prequel</h3>
+    <!--Block level elements, occupy the whole line by themselves-->
+    <!-- Span is an inline element itself, cannot be enclosed in another element-->
+    <p>Jack and <span class="highlight">Jill</span> went up the hill</p>
+    <p>Mary has a little lamb</p>
+
+    <!-- Inline elements, will try to fit into the same line. -->
+    <a href="https://www.gv.com.sg">Golden Village</a>
+    <a href="https://www.nike.com">
+        <img src="Nike.jpg" style="width: 200px;" />
+    </a>
+
+
+    <div id="outer">
+        <ul>
+            <!-- Unordered list-->
+            <li>Star Wars I</li>
+            <li class="special">Star Wars II</li>
+            <li>Star Wars III</li>
+        </ul>
+
+        <ol>
+            <!--Ordered list-->
+            <li class="special">The Lord of the <span>Rings</span></li>
+            <li class="boxoffice underline">Avengers</li>
+            <li class="must=watch">Knives Out</li>
+        </ol>
+
+        <!--/br is a line break, but try to avoid line break, hard coding
+    can use CSS for it unless you want specific line breaks, manual entry-->
+    <!-- Div can be in div -->
+    <div>
+        <p class="special">
+            <span class="genre">Lorem ipsum dolor sit amet, </span> <br />
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        </div>
+    </div>
+    <!-- Table, refrain from using table to format, it is not mobile responsive, hence would not be on search engine-->
+    <table>
+        <tr>
+            <!-- tr is a table row, one row-->
+            <!-- td is a table column-->
+            <td>Movie Title</td>
+            <td>Genre</td>
+            <td>Year released</td>
+        </tr>
+        <tr>
+            <td>The Lord of the Ring</td>
+            <td> <span class="genre">Fantasy</span></td>
+            <td>1999</td>
+        </tr>
+        <tr>
+            <td>The Two Towers</td>
+            <td>Fantasy</td>
+            <td>2000</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
